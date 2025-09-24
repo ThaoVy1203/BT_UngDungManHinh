@@ -148,7 +148,7 @@
             android:textColor="@color/white"></TextView>
 
         <TextView
-            android:id="@+id/click_Signin"
+            android:id="@+id/txt_Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"

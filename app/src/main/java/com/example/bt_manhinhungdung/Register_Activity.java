@@ -1,6 +1,8 @@
 package com.example.bt_manhinhungdung;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,11 @@ public class Register_Activity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        TextView txt = findViewById(R.id.txt_Login);
+        txt.setOnClickListener(v -> {
+            Intent intent = new Intent(Register_Activity.this, Login_Activity.class);
+            startActivity(intent);
         });
     }
 }
